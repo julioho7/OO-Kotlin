@@ -18,11 +18,11 @@ class Pessoa {
 fun main() {
     val julio = Pessoa()
 
-    //julio.cpf = "123" Como o set está private, não conseguimos setar nada nas variáveis
+    //julio.cpf = "123" //Como o set está private, não conseguimos setar nada nas variáveis
 
     println("O nome da criatura é: ${julio.nome}")
     println("O CPF da criatura é: ${julio.cpf}")
-    println("Nome e CPF da criatura em formato de Fun: ${julio.pessoaInfo()}")
+    println("Nome e CPF da criatura em formato do Fun: ${julio.pessoaInfo()}")
 
     //Como puxar da classe inner, dentro da classe Pessoas.
     println("O endereço da criatura é: ${julio.Endereco().rua}")
