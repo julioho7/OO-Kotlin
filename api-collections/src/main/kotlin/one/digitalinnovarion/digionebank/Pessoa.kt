@@ -10,9 +10,11 @@ class Pessoa {
     inner class Endereco {
         var rua: String = "Rua Teste, 123"
     }
+
+    fun pessoaInfo() = "$nome e $cpf" //Método de declarar uma Function para ser setado no Main
 }
 
-//Classe principal
+//Bloco Principal
 fun main() {
     val julio = Pessoa()
 
@@ -20,8 +22,8 @@ fun main() {
 
     println("O nome da criatura é: ${julio.nome}")
     println("O CPF da criatura é: ${julio.cpf}")
+    println("Nome e CPF da criatura em formato de Fun: ${julio.pessoaInfo()}")
 
     //Como puxar da classe inner, dentro da classe Pessoas.
     println("O endereço da criatura é: ${julio.Endereco().rua}")
-
 }
